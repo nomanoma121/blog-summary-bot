@@ -31,6 +31,28 @@ ALLOWED_CHANNEL_IDS=123,456
 bun run index.ts
 ```
 
+## Run with Docker
+
+`.env` を用意したうえで:
+
+```bash
+docker compose up --build -d
+```
+
+停止:
+
+```bash
+docker compose down
+```
+
+ログ確認:
+
+```bash
+docker compose logs -f bot
+```
+
+SQLiteはホスト側の `./data` に永続化されます。
+
 ## Test
 
 ```bash
